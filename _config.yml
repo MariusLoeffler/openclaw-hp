@@ -2,8 +2,8 @@ title: Marius Loeffler
 email: hello@example.com
 description: >-
   Personal homepage — physics, IT transformation, and engineering.
-baseurl: ""
-url: ""
+baseurl: "/openclaw-hp"
+url: "https://mariusloeffler.github.io"
 twitter_username: ""
 github_username: MariusLoeffler
 
