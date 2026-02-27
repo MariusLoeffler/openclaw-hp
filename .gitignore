@@ -1,7 +1,5 @@
-# Node modules and build output
-node_modules/
-dist/
-build/
-.DS_Store
-.env
-*.log
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
