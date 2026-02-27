@@ -1,11 +1,9 @@
 title: Marius Loeffler
 email: hello@example.com
 description: >-
-  Personal homepage — physics, IT transformation, and engineering.
+  Personal homepage — physics, IT transformation, and consulting.
 baseurl: "/openclaw-hp"
 url: "https://mariusloeffler.github.io"
-twitter_username: ""
-github_username: MariusLoeffler
 
 theme: minima
 plugins:
@@ -17,3 +15,8 @@ minima:
 
 header_pages:
   - about.markdown
+  - consulting.md
+  - career-consulting.md
+  - blog.md
+  - impressum.md
+  - privacy.md
