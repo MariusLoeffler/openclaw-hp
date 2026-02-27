@@ -1,0 +1,59 @@
+@import "minima";
+
+:root {
+  --bg: #0b1220;
+  --bg-soft: #111a2e;
+  --text: #e6edf7;
+  --muted: #a8b3c7;
+  --accent: #5aa9ff;
+  --accent-2: #7cc4ff;
+}
+
+body {
+  background: radial-gradient(circle at 20% 0%, #152541 0%, var(--bg) 45%);
+  color: var(--text);
+}
+
+.site-header, .site-footer {
+  border-color: #22314f;
+  background: rgba(17, 26, 46, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+.page-content {
+  padding-top: 2.5rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, rgba(90,169,255,0.16), rgba(124,196,255,0.08));
+  border: 1px solid #2b446e;
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.28);
+}
+
+.hero h1 {
+  margin: 0 0 .35rem 0;
+  font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+}
+
+.hero p { color: var(--muted); }
+
+.grid {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: .9rem;
+}
+
+.card {
+  border: 1px solid #2b446e;
+  border-radius: 14px;
+  padding: 1rem;
+  background: rgba(17, 26, 46, 0.62);
+}
+
+.card h3 { margin-top: 0; }
+
+a { color: var(--accent-2); }
+a:hover { color: var(--accent); }
