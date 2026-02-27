@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <a class="brand-link" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+        <p class="brand-sub">IT transformation · Engineering · Consulting</p>
+      </div>
+
+      <nav class="side-nav" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a>
+        {%- for path in site.header_pages -%}
+          {%- assign p = site.pages | where: "path", path | first -%}
+          {%- if p.title -%}
+            <a href="{{ p.url | relative_url }}"{% if page.url == p.url %} class="active"{% endif %}>{{ p.title | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      </nav>
+
+      <div class="side-footer">
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+    </aside>
+
+    <main class="main-content" aria-label="Content">
+      {{ content }}
+    </main>
+  </div>
+</body>
+
+</html>
