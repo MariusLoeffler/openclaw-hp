@@ -1,24 +1,25 @@
 ---
-layout: home
+layout: page
 title: Home
+permalink: /
 ---
 
 <section class="hero">
   <h1>Marius Loeffler</h1>
-  <p>Consultant in IT transformation with a background in theoretical physics and software/cloud engineering.</p>
+  <p>IT transformation, engineering leadership, and consulting.</p>
 
   <div class="grid">
     <article class="card">
-      <h3>Focus</h3>
-      <p>IT strategy, engineering leadership, platform modernization, and execution.</p>
+      <h3>For companies</h3>
+      <p>See <a href="{{ '/consulting/' | relative_url }}">Business Consulting</a> for services and engagement formats.</p>
     </article>
     <article class="card">
-      <h3>Background</h3>
-      <p>PhD in Lattice QCD. Strong cross-over between deep analytical thinking and practical delivery.</p>
+      <h3>For individuals</h3>
+      <p>See <a href="{{ '/career-consulting/' | relative_url }}">Career Consulting</a> for consulting career guidance.</p>
     </article>
     <article class="card">
-      <h3>Links</h3>
-      <p><a href="https://github.com/MariusLoeffler">GitHub</a> · <a href="mailto:hello@example.com">Contact</a></p>
+      <h3>Insights</h3>
+      <p>Short notes and perspectives on the <a href="{{ '/blog/' | relative_url }}">Blog</a>.</p>
     </article>
   </div>
 </section>
